@@ -59,16 +59,10 @@ const Skills = () => {
   ];
 
   const technologies = [
-    { name: "React", icon: Code, color: "text-ai-primary" },
-    { name: "Node.js", icon: Zap, color: "text-ai-success" },
-    { name: "Python", icon: Brain, color: "text-ai-secondary" },
     { name: "AWS", icon: Cloud, color: "text-ai-warning" },
     { name: "Docker", icon: Shield, color: "text-ai-accent" },
     { name: "MongoDB", icon: Database, color: "text-ai-success" },
     { name: "TensorFlow", icon: Cpu, color: "text-ai-primary" },
-    { name: "TypeScript", icon: Code, color: "text-ai-secondary" },
-    { name: "Next.js", icon: Globe, color: "text-ai-accent" },
-    { name: "Firebase", icon: Network, color: "text-ai-warning" },
     { name: "GraphQL", icon: Network, color: "text-ai-primary" },
     { name: "Redis", icon: Lock, color: "text-ai-error" }
   ];
@@ -97,7 +91,7 @@ const Skills = () => {
         </motion.div>
 
         {/* Skill Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}

@@ -9,18 +9,6 @@ const Skills = () => {
   const { isDark } = useTheme()
   const skillCategories = [
     {
-      title: "Frontend Development",
-      icon: Code,
-      color: "text-ai-primary",
-      bgColor: "bg-ai-primary/10",
-      skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 85 }
-      ]
-    },
-    {
       title: "AI & Machine Learning",
       icon: Brain,
       color: "text-ai-secondary",
@@ -54,18 +42,6 @@ const Skills = () => {
         { name: "Docker", level: 88 },
         { name: "Kubernetes", level: 75 },
         { name: "CI/CD", level: 82 }
-      ]
-    },
-    {
-      title: "Mobile Development",
-      icon: Smartphone,
-      color: "text-ai-warning",
-      bgColor: "bg-ai-warning/10",
-      skills: [
-        { name: "React Native", level: 85 },
-        { name: "Flutter", level: 80 },
-        { name: "iOS Development", level: 75 },
-        { name: "Android Development", level: 78 }
       ]
     },
     {

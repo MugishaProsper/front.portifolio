@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Instagram, Heart, Mail, Phone, MapPin } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { useTheme } from "../contexts/ThemeContext";
 
 const Footer = () => {

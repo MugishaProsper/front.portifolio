@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Instagram, Linkedin, Menu, X } from "lucide-react";
+import { Download, Github, Instagram, Linkedin, Menu, X } from "lucide-react";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "../contexts/ThemeContext";
@@ -111,18 +111,39 @@ const Navbar = () => {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.1, y: -2 }}
                                 whileTap={{ scale: 0.95 }}
-                                className={`${isDark ? 'text-gray-300' : 'text-gray-600'} ${social.color} transition-colors duration-200 p-2 rounded-lg ${isDark ? 'hover:bg-white/10' : 'hover:bg-black/10'} focus:outline-none focus:ring-2 focus:ring-ai-primary focus:ring-offset-2 ${isDark ? 'focus:ring-offset-gray-900' : 'focus:ring-offset-white'}`}
                                 aria-label={`Visit my ${social.name} profile`}
                             >
                                 <social.icon className="w-5 h-5" />
                             </motion.a>
                         ))}
                         <div className="h-6 w-px bg-gray-300 opacity-30"></div>
+                        <motion.a
+                            href="/cv/MugishaProsperResume.pdf"
+                            download="MugishaProsperResume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center px-3 py-2 rounded-md text-sm font-medium ${isDark ? 'text-gray-300 hover:bg-white/10' : 'text-gray-700 hover:bg-black/10'} transition-colors duration-200`}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            aria-label="Download CV"
+                        >
+                            <Download className="h-5 w-5" />
+                            <span className="ml-2 hidden sm:inline">CV</span>
+                        </motion.a>
                         <ThemeToggle />
                     </div>
 
-                    {/* Mobile menu button and theme toggle */}
+                    {/* Mobile menu button */}
                     <div className="md:hidden flex items-center space-x-2">
+                        <motion.a
+                            href="/cv/MugishaProsperResume.pdf"
+                            download="MugishaProsperResume.pdf"
+                            className={`p-2 rounded-md ${isDark ? 'text-gray-300 hover:bg-white/10' : 'text-gray-700 hover:bg-black/10'}`}
+                            whileTap={{ scale: 0.95 }}
+                            aria-label="Download CV"
+                        >
+                            <Download className="w-5 h-5" />
+                        </motion.a>
                         <ThemeToggle />
                         <motion.button
                             whileTap={{ scale: 0.95 }}
@@ -134,7 +155,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
             {/* Mobile Navigation */}
             {isMenuOpen && (
                 <motion.div

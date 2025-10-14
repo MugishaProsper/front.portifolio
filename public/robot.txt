@@ -1,5 +1,5 @@
-# Robots.txt for MUGISHA Prosper Portfolio
-# https://mugishaprosper-seven.vercel.app/robots.txt
+# Robots.txt for MUGISHA Prosper's Portfolio
+# https://mugishaprosper-seven.vercel.app/robot.txt
 
 User-agent: *
 Allow: /

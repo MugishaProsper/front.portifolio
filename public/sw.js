@@ -1,9 +1,9 @@
 // Service Worker for MUGISHA Prosper Portfolio
 // Version 1.0.0
 
-const CACHE_NAME = 'polo-portfolio-v1';
-const STATIC_CACHE_NAME = 'polo-static-v1';
-const DYNAMIC_CACHE_NAME = 'polo-dynamic-v1';
+const CACHE_NAME = 'prosper-portfolio-v1';
+const STATIC_CACHE_NAME = 'prosper-static-v1';
+const DYNAMIC_CACHE_NAME = 'prosper-dynamic-v1';
 
 // Assets to cache on install
 const STATIC_ASSETS = [
@@ -46,7 +46,7 @@ self.addEventListener('activate', (event) => {
               // Delete old caches
               return cacheName !== STATIC_CACHE_NAME && 
                      cacheName !== DYNAMIC_CACHE_NAME &&
-                     cacheName.startsWith('polo-');
+                     cacheName.startsWith('prosper-');
             })
             .map((cacheName) => {
               return caches.delete(cacheName);

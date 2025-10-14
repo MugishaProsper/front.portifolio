@@ -179,7 +179,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className={`text-${isDark ? 'gray-300' : 'gray-600'} text-sm`}>
-              © {currentYear} Polo. All rights reserved.
+              © {currentYear} Mugisha Prosper. All rights reserved.
             </p>
             <div className={`flex items-center gap-2 ${isDark ? 'text-gray-200' : 'text-gray-600'} text-sm`}>
               <span>Made by <span className="text-gradient-ai">Mugisha Prosper</span></span>

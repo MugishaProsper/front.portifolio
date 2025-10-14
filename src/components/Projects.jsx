@@ -88,7 +88,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center mb-8">
-              <Loader2 className="w-8 h-8 text-ai-primary animate-spin" />
+              <Loader2 className="w-8 h-8 text-gradient-ai animate-spin" />
             </div>
             <h2 className={`text-4xl md:text-5xl font-bold ${isDark ? 'text-white' : 'text-gray-500'} mb-4`}>
               Loading <span className="text-gradient-ai">Projects</span>
@@ -274,12 +274,6 @@ const Projects = () => {
               <p className="text-gray-300 text-sm mb-4">
                 No projects match the selected category. Try selecting a different category or check back later.
               </p>
-              <button
-                onClick={() => setSelectedCategory("All")}
-                className="btn-ai px-6 py-3 text-sm font-semibold"
-              >
-                View All Projects
-              </button>
             </div>
           </motion.div>
         )}
@@ -291,6 +285,7 @@ const Projects = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
           className="text-center mt-12"
+          onClick={() => window.open("https://github.com/MugishaProsper")}
         >
           <button className="btn-ai px-8 py-4 text-lg font-semibold">
             View All Projects

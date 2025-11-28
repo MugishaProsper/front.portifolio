@@ -6,13 +6,13 @@ import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const toastVariants = cva(
-  "group pointer-events-auto relative flex w-full items-center justify-between space-x-2 overflow-hidden rounded-md border p-4 pr-6 shadow-lg transition-all",
+  "group pointer-events-auto relative flex w-full items-center justify-between gap-3 overflow-hidden rounded-xl border-1.5 p-4 pr-8 shadow-lg transition-all backdrop-blur-sm",
   {
     variants: {
       variant: {
-        default: "border bg-background text-foreground",
+        default: "bg-background/95 border-border text-foreground",
         destructive:
-          "destructive group border-destructive bg-destructive text-destructive-foreground",
+          "destructive group border-red-500/20 bg-red-500/10 text-red-600 dark:text-red-400",
       },
     },
     defaultVariants: {
@@ -32,7 +32,7 @@ const ToastViewport = React.forwardRef<
   <ol
     ref={ref}
     className={cn(
-      "fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]",
+      "fixed bottom-0 right-0 z-[9999] flex max-h-screen w-full flex-col-reverse gap-2 p-4 md:max-w-[420px]",
       className
     )}
     {...props}
@@ -43,7 +43,8 @@ ToastViewport.displayName = "ToastViewport"
 const Toast = React.forwardRef<
   HTMLLIElement,
   React.HTMLAttributes<HTMLLIElement> & VariantProps<typeof toastVariants> & { open?: boolean; onOpenChange?: (open: boolean) => void }
->(({ className, variant, ...props }, ref) => {
+>(({ className, variant, open, onOpenChange, ...props }, ref) => {
+  // Extract open and onOpenChange to prevent them from being passed to the DOM element
   return (
     <li
       ref={ref}
@@ -76,7 +77,7 @@ const ToastClose = React.forwardRef<
   <button
     ref={ref}
     className={cn(
-      "absolute right-1 top-1 rounded-md p-1 text-foreground/50 opacity-0 transition-opacity hover:text-foreground focus:opacity-100 focus:outline-none focus:ring-1 group-hover:opacity-100",
+      "absolute right-2 top-2 rounded-lg p-1 text-foreground/50 opacity-70 transition-all hover:opacity-100 hover:bg-foreground/5 focus:opacity-100 focus:outline-none focus:ring-1 group-hover:opacity-100",
       className
     )}
     {...props}
@@ -92,7 +93,7 @@ const ToastTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-sm font-semibold [&+div]:text-xs", className)}
+    className={cn("text-sm font-semibold leading-none [&+div]:text-xs", className)}
     {...props}
   />
 ))
@@ -104,7 +105,7 @@ const ToastDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-sm opacity-90", className)}
+    className={cn("text-sm opacity-80 leading-relaxed", className)}
     {...props}
   />
 ))

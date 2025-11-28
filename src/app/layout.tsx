@@ -11,16 +11,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mugisha Prosper - AI Engineer & Full-Stack Developer",
+  title: "Mugisha Prosper - AI Engineer",
   description: "AI Engineer and Full-Stack Developer specializing in machine learning, backend systems, and modern web applications. Based in Kigali, Rwanda.",
   keywords: ["AI Engineer", "Machine Learning", "Full-Stack Developer", "Backend Engineer", "React", "Node.js", "Python", "TensorFlow"],
   authors: [{ name: "Mugisha Prosper" }],
   openGraph: {
     type: "website",
-    url: "https://mugishaprosper.com",
-    title: "Mugisha Prosper - AI Engineer & Full-Stack Developer",
-    description: "AI Engineer and Full-Stack Developer specializing in machine learning, backend systems, and modern web applications.",
-    siteName: "Mugisha Prosper Portfolio",
+    url: "https://mugishaprosper-seven.vercel.app",
+    title: "Mugisha Prosper - AI Engineer",
+    description: "AI Engineer and Full-Stack Developer",
+    siteName: "Mugisha Prosper",
   },
   twitter: {
     card: "summary_large_image",

@@ -39,36 +39,8 @@ const Projects = () => {
             Selected work
           </h2>
           <p className={`text-base md:text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-            A collection of projects showcasing AI integration, modern web development, 
-            and scalable backend systems.
+            A collection of projects showcasing my skills and experience.
           </p>
-        </motion.div>
-
-        {/* Category Filter */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="flex flex-wrap gap-2 mb-10"
-        >
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
-                selectedCategory === category
-                  ? isDark
-                    ? 'bg-white text-black'
-                    : 'bg-black text-white'
-                  : isDark
-                    ? 'bg-gray-900 text-gray-400 hover:text-white'
-                    : 'bg-gray-100 text-gray-600 hover:text-black'
-              }`}
-            >
-              {category}
-            </button>
-          ))}
         </motion.div>
 
         {/* Projects Grid */}
@@ -103,9 +75,9 @@ const Projects = () => {
                   <div
                     className={`absolute inset-0 ${
                       isDark ? 'bg-black/70' : 'bg-black/40'
-                    } opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center backdrop-blur-sm`}
+                    } opacity-0 group-hover:opacity-90 transition-all duration-300 flex items-center justify-center backdrop-blur-sm`}
                   >
-                    <div className="modern-button-primary modern-button-lg">
+                    <div className="modern-button modern-button-md">
                       View Project
                       <ArrowUpRight className="w-5 h-5" />
                     </div>
@@ -131,7 +103,6 @@ const Projects = () => {
                     <h3 className={`text-xl font-semibold ${isDark ? 'text-white' : 'text-black'} group-hover:underline`}>
                       {project.projectName}
                     </h3>
-                    <ExternalLink className={`w-5 h-5 flex-shrink-0 ${isDark ? 'text-gray-600' : 'text-gray-400'} group-hover:text-current transition-colors`} />
                   </div>
 
                   <p className={`text-sm leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'} line-clamp-2`}>

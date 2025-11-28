@@ -40,7 +40,7 @@ const Contact = () => {
   const socialLinks = [
     { name: "GitHub", icon: Github, href: contactInfo.github },
     { name: "LinkedIn", icon: Linkedin, href: contactInfo.linkedin },
-    { name: "Instagram", icon: Instagram, href: contactInfo.instagram }
+    { name: "Email", icon: Mail, href: `mailto:${contactInfo.email}` }
   ];
 
   return (
@@ -186,7 +186,6 @@ const Contact = () => {
                   ) : (
                     <>
                       Send Message
-                      <Send className="w-5 h-5" />
                     </>
                   )}
                 </button>

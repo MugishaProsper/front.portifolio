@@ -39,17 +39,11 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.3 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-          isScrolled
-            ? `${
-                isDark
-                  ? 'bg-black/85 border-gray-900/80'
-                  : 'bg-white/85 border-gray-200/80'
-              } backdrop-blur-modern border-b shadow-sm`
-            : isDark
-              ? 'bg-black/60'
-              : 'bg-white/60'
-        }`}
+        className={`fixed top-2 left-2 right-2 z-50 transition-all duration-200 rounded-lg ${
+          isDark
+            ? 'bg-black/85 border-gray-900/80'
+            : 'bg-white/85 border-gray-200/80'
+        } backdrop-blur-sm border-1.5`}
       >
         <div className="section-container">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -87,8 +81,6 @@ const Navbar = () => {
               </div>
               
               <div className={`w-px h-6 ${isDark ? 'bg-gray-800/80' : 'bg-gray-200'} mx-1`} />
-              
-              <ThemeToggle />
               
               <a
                 href="/cv/MugishaProsperResume.pdf"

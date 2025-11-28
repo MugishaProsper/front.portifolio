@@ -300,3 +300,11 @@ body {
     -webkit-backdrop-filter: blur(10px);
   }
 }
+
+/* Toast z-index override */
+[data-toast-viewport] {
+  z-index: 99999 !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}

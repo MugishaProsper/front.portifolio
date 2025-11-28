@@ -8,9 +8,8 @@ const About = () => {
 
   const skills = [
     { category: "AI & ML", items: ["TensorFlow", "PyTorch", "OpenAI", "Computer Vision"] },
-    { category: "Backend", items: ["Node.js", "Python", "FastAPI", "PostgreSQL"] },
-    { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind"] },
-    { category: "DevOps", items: ["Docker", "AWS", "Kubernetes", "CI/CD"] }
+    { category: "Backend", items: ["Node.js", "Python", "FastAPI", "SpringBoot", "Golang"] },
+    { category: "MLOps", items: ["MLflow", "TensorBoard", "Weights & Biases", "Hugging Face"] }
   ];
 
   return (
@@ -31,11 +30,6 @@ const About = () => {
               }`}>
                 About
               </p>
-              <h2 className={`text-3xl md:text-4xl font-semibold tracking-tight ${
-                isDark ? 'text-white' : 'text-black'
-              }`}>
-                About me
-              </h2>
             </div>
 
             <div className={`space-y-4 text-base leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
@@ -55,26 +49,6 @@ const About = () => {
                 Currently based in Kigali, Rwanda, I work with clients worldwide to bring 
                 their ideas to life through clean code and innovative solutions.
               </p>
-            </div>
-
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 gap-6 pt-6">
-              <div>
-                <div className={`text-2xl font-semibold mb-1 ${isDark ? 'text-white' : 'text-black'}`}>
-                  5+ Years
-                </div>
-                <div className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Experience
-                </div>
-              </div>
-              <div>
-                <div className={`text-2xl font-semibold mb-1 ${isDark ? 'text-white' : 'text-black'}`}>
-                  70+ Projects
-                </div>
-                <div className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Completed
-                </div>
-              </div>
             </div>
           </motion.div>
 

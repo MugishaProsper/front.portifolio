@@ -98,7 +98,11 @@ const Projects = () => {
                   />
                   
                   {/* Overlay on hover */}
-                  <div className={`absolute inset-0 ${isDark ? 'bg-black/70' : 'bg-white/70'} opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center backdrop-blur-sm`}>
+                  <div
+                    className={`absolute inset-0 ${
+                      isDark ? 'bg-black/70' : 'bg-black/40'
+                    } opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center backdrop-blur-sm`}
+                  >
                     <div className="modern-button-primary modern-button-lg">
                       View Project
                       <ArrowUpRight className="w-5 h-5" />

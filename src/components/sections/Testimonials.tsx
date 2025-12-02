@@ -67,10 +67,12 @@ const Testimonials = () => {
           }`}>
             Testimonials
           </p>
-          <h2 className={`text-3xl md:text-4xl font-semibold ${isDark ? 'text-gray-200' : 'text-gray-800'} mb-4`}>
+          <h2 className={`text-3xl md:text-4xl font-semibold tracking-tight mb-4 ${
+            isDark ? 'text-white' : 'text-black'
+          }`}>
             Client <span className="gradient-text">feedback</span>
           </h2>
-          <p className={`text-base md:text-lg ${isDark ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+          <p className={`text-base md:text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'} max-w-3xl mx-auto`}>
             Hear from clients who have experienced the quality and professionalism of my work.
           </p>
         </motion.div>
@@ -114,7 +116,7 @@ const Testimonials = () => {
                   </div>
 
                   {/* Content */}
-                  <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'} text-sm leading-relaxed mb-6 line-clamp-4`}>
+                  <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} text-sm leading-relaxed mb-6 line-clamp-4`}>
                     "{getShortMessage(testimonial.message || '')}"
                   </p>
 
@@ -128,14 +130,16 @@ const Testimonials = () => {
                       className="rounded-full object-cover border-2 border-white/20"
                     />
                     <div className="flex-1">
-                      <h4 className={`${isDark ? 'text-gray-200' : 'text-gray-700'} font-semibold text-sm`}>{testimonial.clientName || 'Anonymous'}</h4>
+                      <h4 className={`${isDark ? 'text-white' : 'text-black'} font-semibold text-sm`}>{testimonial.clientName || 'Anonymous'}</h4>
                       <p className={`${isDark ? 'text-gray-400' : 'text-gray-500'} text-xs capitalize`}>{testimonial.clientRole || 'Client'}</p>
                       <p className="text-blue-500 text-xs font-medium">{testimonial.project || 'Project'}</p>
                     </div>
                   </div>
 
                   {/* Date */}
-                  <div className="mt-4 pt-4 border-t border-white/10">
+                  <div className={`mt-4 pt-4 border-t ${
+                    isDark ? 'border-gray-800' : 'border-gray-200'
+                  }`}>
                     <p className={`${isDark ? 'text-gray-500' : 'text-gray-600'} text-xs`}>{formatDate(testimonial.createdAt)}</p>
                   </div>
 
@@ -158,10 +162,12 @@ const Testimonials = () => {
           className="text-center mt-8"
         >
           <div className="card-ai p-6 max-w-2xl mx-auto">
-            <h3 className={`text-xl font-bold ${isDark ? 'text-white' : 'text-gray-700'} mb-3`}>
+            <h3 className={`text-xl font-semibold mb-3 ${
+              isDark ? 'text-white' : 'text-black'
+            }`}>
               Ready to join these satisfied clients?
             </h3>
-            <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'} text-sm mb-4`}>
+            <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} text-sm mb-4`}>
               Let's discuss how I can help bring your AI and backend projects to life
             </p>
             <button
@@ -240,7 +246,7 @@ const Testimonials = () => {
                   <h5 className={`${isDark ? 'text-white' : 'text-gray-900'} font-semibold text-sm mb-3`}>Full Testimonial:</h5>
                   <div className="relative">
                     <Quote className="absolute -top-2 -left-2 w-6 h-6 text-blue-500 opacity-30" />
-                    <p className={`${isDark ? 'text-gray-300' : 'text-gray-700'} text-sm leading-relaxed pl-6`}>
+                    <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} text-sm leading-relaxed pl-6`}>
                       "{selectedTestimonial.message || 'No message available'}"
                     </p>
                   </div>

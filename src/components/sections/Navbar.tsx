@@ -101,13 +101,6 @@ const Navbar = () => {
 
             {/* Mobile actions */}
             <div className="md:hidden flex items-center gap-2">
-              <a
-                href="/cv/MugishaProsperResume.pdf"
-                download
-                className="modern-button modern-button-sm text-xs font-medium"
-              >
-                Resume
-              </a>
               <ThemeToggle />
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}

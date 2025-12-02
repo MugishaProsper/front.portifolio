@@ -88,11 +88,11 @@ const Skills = () => {
             Skills
           </p>
           <h2 className={`text-3xl md:text-4xl font-semibold tracking-tight mb-4 ${
-            isDark ? 'text-gray-200' : 'text-gray-800'
+            isDark ? 'text-white' : 'text-black'
           }`}>
             Skills & <span className="gradient-text">technologies</span>
           </h2>
-          <p className={`text-base md:text-lg ${isDark ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+          <p className={`text-base md:text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'} max-w-3xl mx-auto`}>
             A comprehensive toolkit of modern technologies and frameworks I use to build intelligent solutions.
           </p>
         </motion.div>
@@ -113,7 +113,7 @@ const Skills = () => {
                 <div className={`p-3 rounded-lg ${category.bgColor}`}>
                   <category.icon className={`w-6 h-6 ${category.color}`} />
                 </div>
-                <h3 className={`text-xl font-bold ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>{category.title}</h3>
+                <h3 className={`text-xl font-semibold ${isDark ? 'text-white' : 'text-black'}`}>{category.title}</h3>
               </div>
 
               <div className="space-y-4">
@@ -126,8 +126,8 @@ const Skills = () => {
                     viewport={{ once: true }}
                   >
                     <div className="flex justify-between items-center mb-2">
-                      <span className={`${isDark ? 'text-gray-300' : 'text-gray-600'} font-medium`}>{skill.name}</span>
-                      <span className={`${isDark ? 'text-white' : 'text-gray-900'} font-bold`}>{skill.level}%</span>
+                      <span className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-medium`}>{skill.name}</span>
+                      <span className={`${isDark ? 'text-white' : 'text-black'} font-semibold`}>{skill.level}%</span>
                     </div>
                     <div className={`w-full ${isDark ? 'bg-gray-700' : 'bg-gray-200'} rounded-full h-2`}>
                       <motion.div
@@ -153,8 +153,10 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h3 className={`text-3xl font-bold ${isDark ? 'text-gray-200' : 'text-gray-700'} mb-8`}>
-            Technologies I <span className="text-gradient-ai">Work With</span>
+          <h3 className={`text-2xl md:text-3xl font-semibold tracking-tight mb-8 ${
+            isDark ? 'text-white' : 'text-black'
+          }`}>
+            Technologies I <span className="gradient-text">Work With</span>
           </h3>
         </motion.div>
 
@@ -172,7 +174,7 @@ const Skills = () => {
               <div className={`w-12 h-12 mx-auto mb-4 p-3 rounded-lg ${isDark ? 'bg-white/10' : 'bg-gray-100'} group-hover:bg-white/20 transition-colors duration-300`}>
                 <tech.icon className={`w-full h-full ${tech.color}`} />
               </div>
-              <h4 className={`${isDark ? 'text-gray-300' : 'text-gray-600'} font-medium text-sm`}>{tech.name}</h4>
+              <h4 className={`${isDark ? 'text-gray-400' : 'text-gray-600'} font-medium text-sm`}>{tech.name}</h4>
             </motion.div>
           ))}
         </div>

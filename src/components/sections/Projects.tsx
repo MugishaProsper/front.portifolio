@@ -89,7 +89,9 @@ const Projects = () => {
                 className="block"
               >
                 {/* Project Image */}
-                <div className="relative aspect-[16/10] mb-4 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800">
+                <div className={`relative aspect-[16/10] mb-4 overflow-hidden rounded-xl border ${
+                  isDark ? 'border-gray-800' : 'border-gray-200'
+                }`}>
                   <Image
                     src={project.sampleImages[0]}
                     alt={project.projectName}

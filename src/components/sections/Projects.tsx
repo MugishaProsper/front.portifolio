@@ -18,7 +18,7 @@ const Projects = () => {
     : projects.filter(project => project.categories && project.categories.includes(selectedCategory));
 
   return (
-    <section id="projects" className="py-32 relative">
+    <section id="projects" className="relative py-24 md:py-28">
       <div className="section-container">
         {/* Header */}
         <motion.div
@@ -26,14 +26,19 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="max-w-3xl mb-16"
+          className="max-w-3xl mb-10 md:mb-12"
         >
-          <h2 className="heading-2 mb-4">
-            <span className={isDark ? 'text-white' : 'text-black'}>
-              Selected Work
-            </span>
+          <p className={`text-xs md:text-sm font-medium tracking-[0.22em] uppercase mb-3 ${
+            isDark ? 'text-gray-500' : 'text-gray-500'
+          }`}>
+            Projects
+          </p>
+          <h2 className={`text-3xl md:text-4xl font-semibold tracking-tight mb-4 ${
+            isDark ? 'text-white' : 'text-black'
+          }`}>
+            Selected work
           </h2>
-          <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+          <p className={`text-base md:text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
             A collection of projects showcasing AI integration, modern web development, 
             and scalable backend systems.
           </p>
@@ -45,7 +50,7 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
-          className="flex flex-wrap gap-2 mb-12"
+          className="flex flex-wrap gap-2 mb-10"
         >
           {categories.map((category) => (
             <button

@@ -14,7 +14,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-32 relative">
+    <section id="about" className="relative py-24 md:py-28">
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - About */}
@@ -25,11 +25,18 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="heading-2">
-              <span className={isDark ? 'text-white' : 'text-black'}>
-                About Me
-              </span>
-            </h2>
+            <div className="space-y-3">
+              <p className={`text-xs md:text-sm font-medium tracking-[0.22em] uppercase ${
+                isDark ? 'text-gray-500' : 'text-gray-500'
+              }`}>
+                About
+              </p>
+              <h2 className={`text-3xl md:text-4xl font-semibold tracking-tight ${
+                isDark ? 'text-white' : 'text-black'
+              }`}>
+                About me
+              </h2>
+            </div>
 
             <div className={`space-y-4 text-base leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               <p>

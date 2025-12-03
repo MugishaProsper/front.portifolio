@@ -27,27 +27,6 @@ const Hero = () => {
 
       <div className="section-container relative z-10 py-16 md:py-20">
         <div className="max-w-5xl mx-auto text-center space-y-10 md:space-y-12">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex justify-center"
-          >
-            <div
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border ${
-                isDark
-                  ? "bg-green-500/5 border-green-500/20 text-green-400"
-                  : "bg-green-500/5 border-green-500/20 text-green-600"
-              }`}
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <span className="text-sm font-medium">Available for new projects</span>
-            </div>
-          </motion.div>
 
           {/* Main heading */}
           <motion.div
@@ -56,13 +35,6 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="space-y-4 md:space-y-6"
           >
-            <p
-              className={`text-sm md:text-base font-medium tracking-[0.18em] uppercase ${
-                isDark ? "text-gray-400" : "text-gray-500"
-              }`}
-            >
-              AI Engineer & Full‑Stack Developer
-            </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-tight md:leading-tight">
               <span className={isDark ? "text-white" : "text-black"}>
                 Building intelligent
@@ -95,7 +67,6 @@ const Hero = () => {
               className="modern-button-primary modern-button-lg group w-full sm:w-auto"
             >
               View my work
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             
             <button
@@ -135,39 +106,6 @@ const Hero = () => {
             >
               <Mail className="w-5 h-5" />
             </a>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto"
-          >
-            <div className="text-center">
-              <div className={`text-3xl font-semibold ${isDark ? 'text-white' : 'text-black'}`}>
-                70+
-              </div>
-              <div className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Projects
-              </div>
-            </div>
-            <div className="text-center">
-              <div className={`text-3xl font-semibold ${isDark ? 'text-white' : 'text-black'}`}>
-                5+
-              </div>
-              <div className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Years Exp
-              </div>
-            </div>
-            <div className="text-center">
-              <div className={`text-3xl font-semibold ${isDark ? 'text-white' : 'text-black'}`}>
-                100%
-              </div>
-              <div className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Satisfaction
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>

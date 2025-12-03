@@ -171,17 +171,17 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="modern-button-primary w-full sm:w-auto disabled:opacity-50"
+                  className="modern-button-primary modern-button-lg w-full sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
                     <>
-                      <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                      <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
                       Sending...
                     </>
                   ) : (
                     <>
                       Send Message
-                      <Send className="w-4 h-4" />
+                      <Send className="w-5 h-5" />
                     </>
                   )}
                 </button>

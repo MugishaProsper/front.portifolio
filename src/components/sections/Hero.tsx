@@ -13,14 +13,14 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Subtle grid background */}
-      <div className="absolute inset-0 grid-background opacity-30" />
+      {/* Large grid background */}
+      <div className="absolute inset-0 grid-background-large opacity-40" />
       
       {/* Gradient overlay */}
-      <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-b from-transparent via-black/50 to-black' : 'bg-gradient-to-b from-transparent via-white/50 to-white'}`} />
+      <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-b from-transparent via-black/30 to-black' : 'bg-gradient-to-b from-transparent via-white/30 to-white'}`} />
 
       <div className="section-container relative z-10 py-32">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="max-w-5xl mx-auto text-center space-y-10">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,12 +28,16 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="flex justify-center"
           >
-            <div className="badge">
-              <span className="relative flex h-2 w-2 mr-2">
+            <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border ${
+              isDark 
+                ? 'bg-green-500/5 border-green-500/20 text-green-400' 
+                : 'bg-green-500/5 border-green-500/20 text-green-600'
+            }`}>
+              <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              Available for new projects
+              <span className="text-sm font-medium">Available for new projects</span>
             </div>
           </motion.div>
 
@@ -42,9 +46,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="space-y-4"
+            className="space-y-6"
           >
-            <h1 className="heading-1">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-none">
               <span className={isDark ? 'text-white' : 'text-black'}>
                 Building intelligent
               </span>
@@ -54,7 +58,7 @@ const Hero = () => {
               </span>
             </h1>
             
-            <p className={`text-lg md:text-xl max-w-2xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+            <p className={`text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               AI Engineer & Full-Stack Developer specializing in machine learning, 
               backend systems, and modern web applications.
             </p>
@@ -65,19 +69,19 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
           >
             <button
               onClick={() => scrollToSection('projects')}
-              className="modern-button-primary group"
+              className="modern-button-primary modern-button-lg group w-full sm:w-auto"
             >
               View my work
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             
             <button
               onClick={() => scrollToSection('contact')}
-              className="modern-button"
+              className="modern-button modern-button-lg w-full sm:w-auto"
             >
               Get in touch
             </button>

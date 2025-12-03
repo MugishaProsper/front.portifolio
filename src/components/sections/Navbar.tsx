@@ -58,29 +58,34 @@ const Navbar = () => {
             </motion.button>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
-              {navigation.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className={`text-sm font-medium transition-colors ${
-                    isDark 
-                      ? 'text-gray-400 hover:text-white' 
-                      : 'text-gray-600 hover:text-black'
-                  }`}
-                >
-                  {item.name}
-                </button>
-              ))}
+            <div className="hidden md:flex items-center gap-6">
+              <div className="flex items-center gap-8">
+                {navigation.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.href)}
+                    className={`text-sm font-medium transition-all relative group ${
+                      isDark 
+                        ? 'text-gray-400 hover:text-white' 
+                        : 'text-gray-600 hover:text-black'
+                    }`}
+                  >
+                    {item.name}
+                    <span className={`absolute -bottom-1 left-0 w-0 h-px transition-all group-hover:w-full ${
+                      isDark ? 'bg-white' : 'bg-black'
+                    }`} />
+                  </button>
+                ))}
+              </div>
               
-              <div className={`w-px h-4 ${isDark ? 'bg-gray-800' : 'bg-gray-200'}`} />
+              <div className={`w-px h-5 ${isDark ? 'bg-gray-800' : 'bg-gray-200'}`} />
               
               <ThemeToggle />
               
               <a
                 href="/cv/MugishaProsperResume.pdf"
                 download
-                className="modern-button-primary text-sm"
+                className="modern-button-primary modern-button-sm"
               >
                 Resume
               </a>
@@ -120,7 +125,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   onClick={() => scrollToSection(item.href)}
-                  className={`block w-full text-left text-lg font-medium ${
+                  className={`block w-full text-left text-lg font-medium transition-colors ${
                     isDark ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'
                   }`}
                 >
@@ -133,7 +138,7 @@ const Navbar = () => {
               <a
                 href="/cv/MugishaProsperResume.pdf"
                 download
-                className="modern-button-primary w-full text-center"
+                className="modern-button-primary modern-button-lg w-full text-center justify-center"
               >
                 Download Resume
               </a>

@@ -93,10 +93,10 @@ const Projects = () => {
                   />
                   
                   {/* Overlay on hover */}
-                  <div className={`absolute inset-0 ${isDark ? 'bg-black/60' : 'bg-white/60'} opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center`}>
-                    <div className="modern-button-primary">
+                  <div className={`absolute inset-0 ${isDark ? 'bg-black/70' : 'bg-white/70'} opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center backdrop-blur-sm`}>
+                    <div className="modern-button-primary modern-button-lg">
                       View Project
-                      <ArrowUpRight className="w-4 h-4" />
+                      <ArrowUpRight className="w-5 h-5" />
                     </div>
                   </div>
 
@@ -165,10 +165,10 @@ const Projects = () => {
             href="https://github.com/MugishaProsper"
             target="_blank"
             rel="noopener noreferrer"
-            className="modern-button group"
+            className="modern-button modern-button-lg group"
           >
             View all projects on GitHub
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
         </motion.div>
       </div>

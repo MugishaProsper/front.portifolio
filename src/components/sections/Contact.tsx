@@ -44,7 +44,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-32 relative">
+    <section id="contact" className="relative py-24 md:py-28">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -55,12 +55,17 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="heading-2 mb-4">
-              <span className={isDark ? 'text-white' : 'text-black'}>
-                Let's work together
-              </span>
+            <p className={`text-xs md:text-sm font-medium tracking-[0.22em] uppercase mb-3 ${
+              isDark ? 'text-gray-500' : 'text-gray-500'
+            }`}>
+              Contact
+            </p>
+            <h2 className={`text-3xl md:text-4xl font-semibold tracking-tight mb-4 ${
+              isDark ? 'text-white' : 'text-black'
+            }`}>
+              Let&apos;s work together
             </h2>
-            <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+            <p className={`text-base md:text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               Have a project in mind? Let's discuss how I can help bring your ideas to life.
             </p>
           </motion.div>

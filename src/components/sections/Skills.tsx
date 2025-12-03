@@ -68,24 +68,31 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 relative">
+    <section id="skills" className="relative py-24 md:py-28">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-600/20 rounded-full blur-3xl ai-float"></div>
-        <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-full blur-3xl ai-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-400/10 to-purple-600/10 rounded-full blur-3xl ai-float"></div>
+        <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-gradient-to-br from-cyan-400/10 to-blue-600/10 rounded-full blur-3xl ai-float" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="section-container relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <h2 className={`text-4xl md:text-5xl font-bold ${isDark ? 'text-gray-200' : 'text-gray-700'} mb-4`}>
-            Skills & <span className="text-gradient-ai">Technologies</span>
+          <p className={`text-xs md:text-sm font-medium tracking-[0.22em] uppercase mb-3 ${
+            isDark ? 'text-gray-500' : 'text-gray-500'
+          }`}>
+            Skills
+          </p>
+          <h2 className={`text-3xl md:text-4xl font-semibold tracking-tight mb-4 ${
+            isDark ? 'text-gray-200' : 'text-gray-800'
+          }`}>
+            Skills & <span className="gradient-text">technologies</span>
           </h2>
-          <p className={`text-xl ${isDark ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
+          <p className={`text-base md:text-lg ${isDark ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
             A comprehensive toolkit of modern technologies and frameworks I use to build intelligent solutions.
           </p>
         </motion.div>

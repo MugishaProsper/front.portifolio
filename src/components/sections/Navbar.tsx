@@ -22,7 +22,7 @@ const Navbar = () => {
   const navigation = [
     { name: 'Work', href: '#projects' },
     { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -34,25 +34,33 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <> 
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.3 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-          isScrolled 
-            ? `${isDark ? 'bg-black/80' : 'bg-white/80'} backdrop-blur-modern border-b ${isDark ? 'border-gray-900' : 'border-gray-200'}` 
-            : 'bg-transparent'
+          isScrolled
+            ? `${
+                isDark
+                  ? 'bg-black/85 border-gray-900/80'
+                  : 'bg-white/85 border-gray-200/80'
+              } backdrop-blur-modern border-b shadow-sm`
+            : isDark
+              ? 'bg-black/60'
+              : 'bg-white/60'
         }`}
       >
         <div className="section-container">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <motion.button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className={`text-lg font-semibold ${isDark ? 'text-white' : 'text-black'}`}
+              className={`text-base md:text-lg font-semibold tracking-tight ${
+                isDark ? 'text-white' : 'text-black'
+              }`}
             >
               Mugisha Prosper
             </motion.button>
@@ -78,25 +86,37 @@ const Navbar = () => {
                 ))}
               </div>
               
-              <div className={`w-px h-5 ${isDark ? 'bg-gray-800' : 'bg-gray-200'}`} />
+              <div className={`w-px h-6 ${isDark ? 'bg-gray-800/80' : 'bg-gray-200'} mx-1`} />
               
               <ThemeToggle />
               
               <a
                 href="/cv/MugishaProsperResume.pdf"
                 download
-                className="modern-button-primary modern-button-sm"
+                className="modern-button-primary modern-button-sm hidden lg:inline-flex"
               >
                 Resume
               </a>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden flex items-center gap-4">
+            {/* Mobile actions */}
+            <div className="md:hidden flex items-center gap-2">
+              <a
+                href="/cv/MugishaProsperResume.pdf"
+                download
+                className="modern-button modern-button-sm text-xs font-medium"
+              >
+                Resume
+              </a>
               <ThemeToggle />
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className={`p-2 ${isDark ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'}`}
+                className={`p-2 rounded-lg border ${
+                  isDark
+                    ? 'border-gray-800 text-gray-400 hover:text-white hover:border-gray-700 bg-black/40'
+                    : 'border-gray-200 text-gray-600 hover:text-black hover:border-gray-300 bg-white/60'
+                } transition-colors`}
+                aria-label="Toggle navigation menu"
               >
                 {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -113,9 +133,11 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className={`fixed top-16 left-0 right-0 z-40 ${
-              isDark ? 'bg-black border-gray-900' : 'bg-white border-gray-200'
-            } border-b md:hidden`}
+            className={`fixed top-16 left-0 right-0 z-40 md:hidden border-b ${
+              isDark
+                ? 'bg-black/95 border-gray-900/80'
+                : 'bg-white/95 border-gray-200/80'
+            } backdrop-blur-modern`}
           >
             <div className="section-container py-6 space-y-4">
               {navigation.map((item, index) => (

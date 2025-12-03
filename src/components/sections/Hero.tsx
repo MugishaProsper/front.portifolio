@@ -8,19 +8,25 @@ const Hero = () => {
   const { isDark } = useTheme();
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-28">
       {/* Large grid background */}
       <div className="absolute inset-0 grid-background-large opacity-40" />
       
       {/* Gradient overlay */}
-      <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-b from-transparent via-black/30 to-black' : 'bg-gradient-to-b from-transparent via-white/30 to-white'}`} />
+      <div
+        className={`absolute inset-0 ${
+          isDark
+            ? "bg-gradient-to-b from-black via-black/40 to-black"
+            : "bg-gradient-to-b from-white via-white/60 to-white"
+        }`}
+      />
 
-      <div className="section-container relative z-10 py-32">
-        <div className="max-w-5xl mx-auto text-center space-y-10">
+      <div className="section-container relative z-10 py-16 md:py-20">
+        <div className="max-w-5xl mx-auto text-center space-y-10 md:space-y-12">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,11 +34,13 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="flex justify-center"
           >
-            <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border ${
-              isDark 
-                ? 'bg-green-500/5 border-green-500/20 text-green-400' 
-                : 'bg-green-500/5 border-green-500/20 text-green-600'
-            }`}>
+            <div
+              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border ${
+                isDark
+                  ? "bg-green-500/5 border-green-500/20 text-green-400"
+                  : "bg-green-500/5 border-green-500/20 text-green-600"
+              }`}
+            >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -46,10 +54,17 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="space-y-6"
+            className="space-y-4 md:space-y-6"
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-none">
-              <span className={isDark ? 'text-white' : 'text-black'}>
+            <p
+              className={`text-sm md:text-base font-medium tracking-[0.18em] uppercase ${
+                isDark ? "text-gray-400" : "text-gray-500"
+              }`}
+            >
+              AI Engineer & Full‑Stack Developer
+            </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-tight md:leading-tight">
+              <span className={isDark ? "text-white" : "text-black"}>
                 Building intelligent
               </span>
               <br />
@@ -58,9 +73,13 @@ const Hero = () => {
               </span>
             </h1>
             
-            <p className={`text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              AI Engineer & Full-Stack Developer specializing in machine learning, 
-              backend systems, and modern web applications.
+            <p
+              className={`text-base md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed ${
+                isDark ? "text-gray-400" : "text-gray-600"
+              }`}
+            >
+              I design and ship AI‑powered products, scalable backend systems, and
+              modern web experiences that feel fast, polished, and reliable.
             </p>
           </motion.div>
 

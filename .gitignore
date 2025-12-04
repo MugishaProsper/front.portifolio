@@ -33,9 +33,23 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+<<<<<<< HEAD
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+=======
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+>>>>>>> 95d3bee0b43866df655c410ddee3f05d230c75fe

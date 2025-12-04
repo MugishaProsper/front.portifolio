@@ -140,7 +140,7 @@ export const testimonials = [
     _id: "3",
     clientName: "Emily Rodriguez",
     clientRole: "Founder & CEO",
-    project: "Mobile App",
+    project: "Mobile Fitness App",
     message: "Prosper's expertise in mobile development and AI integration helped us launch our fitness app ahead of schedule. The AI-powered features he implemented have become our key differentiator in the market. Highly recommended!",
     rating: 5,
     image: "https://ui-avatars.com/api/?name=Emily+Rodriguez&background=06b6d4&color=ffffff",

@@ -24,10 +24,8 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>('dark');
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     const savedTheme = localStorage.getItem('portfolio-theme') as Theme;
     if (savedTheme) {
       setTheme(savedTheme);
@@ -39,8 +37,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   useEffect(() => {
-    if (!mounted) return;
-
     const root = document.documentElement;
     root.classList.remove('light', 'dark');
     
@@ -57,7 +53,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     if (metaThemeColor) {
       metaThemeColor.setAttribute('content', theme === 'dark' ? '#0f172a' : '#ffffff');
     }
-  }, [theme, mounted]);
+  }, [theme]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -84,10 +80,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     isDark: theme === 'dark',
     isLight: theme === 'light'
   };
-
-  if (!mounted) {
-    return null;
-  }
 
   return (
     <ThemeContext.Provider value={value}>

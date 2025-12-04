@@ -255,4 +255,81 @@ const Projects = () => {
                         className="w-full h-56 sm:h-64 rounded-lg object-cover"
                       />
                       {selectedProject.sampleImages.length > 1 && (
-                        <div c
+                        <div className="mt-3 grid grid-cols-5 gap-2">
+                          {selectedProject.sampleImages.map((img, idx) => (
+                            <button
+                              key={idx}
+                              onClick={() => setActiveImageIdx(idx)}
+                              className={`rounded-md overflow-hidden border ${idx === activeImageIdx ? 'border-blue-500' : 'border-white/10'}`}
+                            >
+                              <Image src={img} alt={`thumb-${idx}`} width={80} height={60} className="w-full h-14 object-cover" />
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex-1 text-center sm:text-left">
+                      <h2 className={`text-xl sm:text-2xl lg:text-3xl font-bold ${isDark ? 'text-white' : 'text-gray-900'} mb-2`}>{selectedProject.projectName}</h2>
+                      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 mb-3">
+                        <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-sm font-medium ${getProjectColor(selectedProject.categories)}`}>
+                          {(() => {
+                            const ProjectIcon = getProjectIcon(selectedProject.categories);
+                            return <ProjectIcon className="w-4 h-4" />;
+                          })()}
+                          <span className="hidden sm:inline">{selectedProject.categories?.join(", ")}</span>
+                          <span className="sm:hidden">{selectedProject.categories?.[0]}</span>
+                        </div>
+                        <div className={`inline-flex items-center gap-1 px-3 py-1 rounded-full glass text-sm font-medium ${getStatusColor(selectedProject.projectStatus)}`}>
+                          {selectedProject.projectStatus}
+                        </div>
+                      </div>
+                      <div className={`flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-6 text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                        <div className="flex items-center gap-1">
+                          <Calendar className="w-4 h-4" />
+                          <span>Added: {formatDate(selectedProject.createdAt)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-4 sm:mb-6">
+                    <h3 className={`${isDark ? 'text-white' : 'text-gray-900'} font-semibold text-base sm:text-lg mb-2 sm:mb-3`}>Description</h3>
+                    <p className={`${isDark ? 'text-gray-300' : 'text-gray-700'} leading-relaxed text-sm sm:text-base`}>{selectedProject.projectDescription}</p>
+                  </div>
+
+                  <div className="mb-4 sm:mb-6">
+                    <h3 className={`${isDark ? 'text-white' : 'text-gray-900'} font-semibold text-base sm:text-lg mb-2 sm:mb-3`}>Technologies Used</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedProject.technologies?.map((tech) => (
+                        <span
+                          key={tech}
+                          className={`px-2 sm:px-3 py-1 ${isDark ? 'bg-white/10' : 'bg-gray-200'} rounded-lg text-xs sm:text-sm ${isDark ? 'text-gray-300' : 'text-gray-700'}`}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="mb-6 sm:mb-8">
+                    <a
+                      href={selectedProject.projectUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white text-sm sm:text-base font-medium hover:shadow-lg transition-all duration-300"
+                    >
+                      <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
+                      Visit Live Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  );
+};
+
+export default Projects;

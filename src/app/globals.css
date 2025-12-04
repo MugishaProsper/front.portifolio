@@ -144,30 +144,86 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.625rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.25rem;
-  border-radius: 8px;
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1.5px solid var(--border);
   background: var(--background);
   color: var(--foreground);
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--muted);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modern-button:hover::before {
+  opacity: 1;
 }
 
 .modern-button:hover {
-  background: var(--muted);
   border-color: var(--foreground);
+  transform: translateY(-1px);
+}
+
+.modern-button:active {
+  transform: translateY(0);
+}
+
+.modern-button > * {
+  position: relative;
+  z-index: 1;
 }
 
 .modern-button-primary {
   background: var(--foreground);
   color: var(--background);
   border-color: var(--foreground);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.modern-button-primary::before {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark .modern-button-primary::before {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .modern-button-primary:hover {
-  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.dark .modern-button-primary:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.modern-button-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Button sizes */
+.modern-button-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 10px;
+}
+
+.modern-button-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 14px;
 }
 
 /* Grid background effect */
@@ -175,9 +231,18 @@ body {
   background-image: 
     linear-gradient(to right, var(--border) 1px, transparent 1px),
     linear-gradient(to bottom, var(--border) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  background-size: 80px 80px;
+  mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+}
+
+.grid-background-large {
+  background-image: 
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 120px 120px;
+  mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
 }
 
 /* Section spacing */

@@ -3,8 +3,67 @@
 export const projects = [
   {
     _id: "1",
-    projectName: "Portfolio Website",
-    projectDescription: "Modern, responsive portfolio website built with Next.js 15 and TypeScript. Features dark/light theme switching, smooth animations with Framer Motion, and a professional contact form with email integration. Showcases projects, skills, and testimonials with a clean, minimalist design inspired by modern web aesthetics.",
+    projectName: "Back.Social - AI Social Media Platform",
+    projectDescription: "Revolutionary AI-powered social media application that leverages machine learning for intelligent content curation, personalized feeds, and automated moderation. Features include real-time messaging, AI-driven content recommendations, sentiment analysis, and smart engagement metrics. Built with modern JavaScript stack focusing on scalability and user experience.",
+    sampleImages: [
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800",
+      "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800"
+    ],
+    technologies: ["JavaScript", "Node.js", "React", "MongoDB", "TensorFlow.js", "Socket.io", "Express", "Redis"],
+    categories: ["AI/ML", "Full Stack", "Social Media"],
+    projectStatus: "COMPLETED",
+    projectUrl: "https://github.com/MugishaProsper/back.social",
+    createdAt: "2024-11-15T10:00:00.000Z",
+    statistics: {
+      likes: 156,
+      views: 4200,
+      comments_count: 34
+    }
+  },
+  {
+    _id: "2",
+    projectName: "FinanceAI",
+    projectDescription: "Intelligent banking platform powered by Python and machine learning algorithms. Features include fraud detection using anomaly detection models, credit risk assessment with predictive analytics, automated transaction categorization, and personalized financial insights. Implements secure authentication, real-time transaction processing, and comprehensive financial reporting with AI-driven recommendations.",
+    sampleImages: [
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+    ],
+    technologies: ["Python", "Django", "TensorFlow", "Scikit-learn", "PostgreSQL", "Redis", "Celery", "Docker"],
+    categories: ["AI/ML", "FinTech", "Backend Development"],
+    projectStatus: "COMPLETED",
+    projectUrl: "https://github.com/MugishaProsper/ai.banking",
+    createdAt: "2024-10-20T10:00:00.000Z",
+    statistics: {
+      likes: 203,
+      views: 5800,
+      comments_count: 47
+    }
+  },
+  {
+    _id: "3",
+    projectName: "VoteChain",
+    projectDescription: "Next-generation voting platform leveraging artificial intelligence for secure, transparent, and efficient decision-making. Features include AI-powered vote verification, blockchain-inspired consensus mechanisms, real-time results visualization, and intelligent fraud prevention. Implements secure authentication, encrypted ballot casting, and comprehensive audit trails with machine learning-based anomaly detection.",
+    sampleImages: [
+      "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800",
+      "https://images.unsplash.com/photo-1495592822108-9e6261896da8?w=800"
+    ],
+    technologies: ["JavaScript", "React", "Node.js", "Express", "MongoDB", "TensorFlow.js", "Web3", "Chart.js"],
+    categories: ["AI/ML", "Full Stack", "Blockchain"],
+    projectStatus: "COMPLETED",
+    projectUrl: "https://github.com/MugishaProsper/ai-voting-system-front",
+    createdAt: "2024-09-10T10:00:00.000Z",
+    statistics: {
+      likes: 189,
+      views: 6100,
+      comments_count: 52
+    }
+  },
+  {
+    _id: "4",
+    projectName: "Prosper.dev",
+    projectDescription: "Modern, responsive portfolio website built with Next.js 15 and TypeScript. Features dark/light theme switching with system preference detection, smooth animations with Framer Motion, and a professional contact form with SMTP email integration. Showcases projects, skills, and testimonials with a clean, minimalist design inspired by modern web aesthetics.",
     sampleImages: [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
@@ -15,101 +74,46 @@ export const projects = [
     projectUrl: "https://github.com/MugishaProsper/frontend",
     createdAt: "2024-12-01T10:00:00.000Z",
     statistics: {
-      likes: 45,
-      views: 1200,
-      comments_count: 8
-    }
-  },
-  {
-    _id: "2",
-    projectName: "E-Commerce Platform",
-    projectDescription: "Full-stack e-commerce application with product management, shopping cart, and secure checkout. Built with modern web technologies and best practices. Features include user authentication, product search and filtering, order management, and responsive design for mobile and desktop.",
-    sampleImages: [
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800",
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800"
-    ],
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe", "JWT"],
-    categories: ["Full Stack", "Backend Development"],
-    projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-10-15T10:00:00.000Z",
-    statistics: {
-      likes: 78,
-      views: 2400,
-      comments_count: 15
-    }
-  },
-  {
-    _id: "3",
-    projectName: "Task Management System",
-    projectDescription: "Collaborative task management application with real-time updates. Features include project boards, task assignments, deadline tracking, team collaboration, and progress visualization. Built with modern stack focusing on performance and user experience.",
-    sampleImages: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800"
-    ],
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Docker"],
-    categories: ["Full Stack", "Real-time Applications"],
-    projectStatus: "IN_PROGRESS",
-    projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-11-20T10:00:00.000Z",
-    statistics: {
-      likes: 62,
-      views: 1800,
-      comments_count: 12
-    }
-  },
-  {
-    _id: "4",
-    projectName: "Weather Dashboard",
-    projectDescription: "Interactive weather dashboard providing real-time weather data and forecasts. Features location-based weather, 7-day forecasts, weather maps, and historical data visualization. Clean UI with responsive design and smooth animations.",
-    sampleImages: [
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800"
-    ],
-    technologies: ["React", "JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
-    categories: ["Frontend Development", "API Integration"],
-    projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-09-10T10:00:00.000Z",
-    statistics: {
-      likes: 34,
-      views: 980,
-      comments_count: 6
+      likes: 142,
+      views: 3800,
+      comments_count: 29
     }
   },
   {
     _id: "5",
-    projectName: "Blog Platform",
-    projectDescription: "Modern blogging platform with markdown support, rich text editing, and content management. Features include user authentication, post creation and editing, comments, tags, search functionality, and SEO optimization. Built with focus on performance and accessibility.",
+    projectName: "ShopHub",
+    projectDescription: "Full-stack e-commerce application with advanced product management, intelligent shopping cart, and secure payment processing. Features include user authentication with JWT, advanced product search and filtering, order tracking, inventory management, and responsive design optimized for mobile and desktop. Implements real-time notifications and comprehensive admin dashboard.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800"
+      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800"
     ],
-    technologies: ["Next.js", "React", "MongoDB", "Markdown", "Tailwind CSS", "Vercel"],
-    categories: ["Full Stack", "Content Management"],
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe", "JWT", "Socket.io"],
+    categories: ["Full Stack", "E-Commerce"],
     projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-08-25T10:00:00.000Z",
+    projectUrl: "https://github.com/MugishaProsper/eshop-front",
+    createdAt: "2024-08-15T10:00:00.000Z",
     statistics: {
-      likes: 56,
-      views: 1650,
-      comments_count: 11
+      likes: 167,
+      views: 4900,
+      comments_count: 41
     }
   },
   {
     _id: "6",
-    projectName: "Chat Application",
-    projectDescription: "Real-time chat application with private messaging, group chats, and file sharing. Features include user presence indicators, typing indicators, message history, emoji support, and push notifications. Built with WebSocket for instant communication.",
+    projectName: "ChatFlow",
+    projectDescription: "Enterprise-grade real-time messaging platform with private messaging, group chats, and multimedia file sharing. Features include user presence indicators, typing indicators, message history with search, emoji support, push notifications, and end-to-end encryption. Built with WebSocket technology for instant, bidirectional communication and Redis for session management.",
     sampleImages: [
       "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800"
     ],
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "JWT", "Redis"],
+    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "JWT", "Redis", "AWS S3"],
     categories: ["Full Stack", "Real-time Applications"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
     createdAt: "2024-07-30T10:00:00.000Z",
     statistics: {
-      likes: 89,
-      views: 2800,
-      comments_count: 19
+      likes: 178,
+      views: 5200,
+      comments_count: 38
     }
   }
 ];
@@ -118,38 +122,38 @@ export const projects = [
 export const showcaseProjects = [
   {
     _id: "7",
-    projectName: "Social Media Dashboard",
-    projectDescription: "Analytics dashboard for social media management with data visualization, post scheduling, and engagement tracking. Features include multi-platform integration, real-time analytics, automated reporting, and team collaboration tools. Built with focus on data visualization and user experience.",
+    projectName: "TaskMaster Pro",
+    projectDescription: "Collaborative project management platform with real-time updates and team coordination. Features include Kanban boards, task assignments with priority levels, deadline tracking, team collaboration with comments, progress visualization with analytics, and automated notifications. Built with modern stack focusing on performance, scalability, and intuitive user experience.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800"
     ],
-    technologies: ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL", "Redis"],
-    categories: ["Full Stack", "Data Visualization"],
+    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Docker", "Redis"],
+    categories: ["Full Stack", "Productivity"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
     createdAt: "2024-11-01T10:00:00.000Z",
     statistics: {
-      likes: 71,
-      views: 2100,
-      comments_count: 14
+      likes: 134,
+      views: 3600,
+      comments_count: 27
     }
   },
   {
     _id: "8",
-    projectName: "Fitness Tracker App",
-    projectDescription: "Mobile-responsive fitness tracking application with workout logging, progress tracking, and goal setting. Features include exercise library, custom workout plans, nutrition tracking, and progress visualization with charts. Built with modern web technologies for optimal performance.",
+    projectName: "SkyWatch",
+    projectDescription: "Comprehensive weather intelligence platform providing real-time meteorological data and predictive analytics. Features include location-based weather with GPS integration, 14-day forecasts with hourly breakdowns, interactive weather maps with multiple layers, historical data analysis, and severe weather alerts. Implements data visualization with charts and graphs for temperature, precipitation, and wind patterns.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800"
+      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800"
     ],
-    technologies: ["React", "Node.js", "MongoDB", "Chart.js", "Express", "JWT"],
-    categories: ["Full Stack", "Health & Fitness"],
+    technologies: ["React", "JavaScript", "OpenWeather API", "Chart.js", "Mapbox", "Node.js", "Express"],
+    categories: ["Full Stack", "Data Visualization"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
     createdAt: "2024-06-15T10:00:00.000Z",
     statistics: {
-      likes: 52,
-      views: 1450,
-      comments_count: 9
+      likes: 98,
+      views: 2750,
+      comments_count: 19
     }
   }
 ];

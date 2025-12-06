@@ -14,14 +14,14 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-28">
       {/* Large grid background */}
-      <div className="absolute inset-0 grid-background-large opacity-40" />
+      <div className="absolute inset-0 grid-background-large" />
       
       {/* Gradient overlay */}
       <div
         className={`absolute inset-0 ${
           isDark
-            ? "bg-gradient-to-b from-black via-black/40 to-black"
-            : "bg-gradient-to-b from-white via-white/60 to-white"
+            ? "bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]"
+            : "bg-gradient-to-b from-white via-white/70 to-white"
         }`}
       />
 

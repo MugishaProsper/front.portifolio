@@ -93,7 +93,6 @@ const Navbar = () => {
 
             {/* Mobile actions */}
             <div className="md:hidden flex items-center gap-2">
-              <ThemeToggle />
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className={`p-2 rounded-lg border ${

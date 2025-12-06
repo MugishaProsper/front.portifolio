@@ -3,114 +3,113 @@
 export const projects = [
   {
     _id: "1",
-    projectName: "Real-Time Fraud Detection System",
-    projectDescription: "Production ML system processing 50K+ transactions/second using ensemble models (XGBoost, LightGBM, Neural Networks). Reduced false positives by 67% while maintaining 99.2% fraud detection accuracy. Implemented feature engineering pipeline with 200+ behavioral signals and real-time model serving with <50ms latency.",
+    projectName: "Portfolio Website",
+    projectDescription: "Modern, responsive portfolio website built with Next.js 15 and TypeScript. Features dark/light theme switching, smooth animations with Framer Motion, and a professional contact form with email integration. Showcases projects, skills, and testimonials with a clean, minimalist design inspired by modern web aesthetics.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
     ],
-    technologies: ["Python", "PyTorch", "XGBoost", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes"],
-    categories: ["AI/ML", "Backend Development"],
+    technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Framer Motion", "Nodemailer"],
+    categories: ["Frontend Development", "Full Stack"],
     projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-11-15T10:00:00.000Z",
+    projectUrl: "https://github.com/MugishaProsper/frontend",
+    createdAt: "2024-12-01T10:00:00.000Z",
     statistics: {
-      likes: 156,
-      views: 4200,
-      comments_count: 34
+      likes: 45,
+      views: 1200,
+      comments_count: 8
     }
   },
   {
     _id: "2",
-    projectName: "Large-Scale NLP Pipeline for Document Intelligence",
-    projectDescription: "Built end-to-end NLP system processing 1M+ documents daily. Fine-tuned BERT and GPT models for entity extraction, classification, and summarization. Implemented distributed training with DeepSpeed, achieving 40% faster training. Deployed with A/B testing framework showing 35% improvement in extraction accuracy.",
+    projectName: "E-Commerce Platform",
+    projectDescription: "Full-stack e-commerce application with product management, shopping cart, and secure checkout. Built with modern web technologies and best practices. Features include user authentication, product search and filtering, order management, and responsive design for mobile and desktop.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800"
     ],
-    technologies: ["Python", "Transformers", "PyTorch", "FastAPI", "Elasticsearch", "AWS SageMaker", "MLflow"],
-    categories: ["AI/ML", "NLP"],
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe", "JWT"],
+    categories: ["Full Stack", "Backend Development"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-10-20T10:00:00.000Z",
+    createdAt: "2024-10-15T10:00:00.000Z",
     statistics: {
-      likes: 203,
-      views: 5800,
-      comments_count: 47
+      likes: 78,
+      views: 2400,
+      comments_count: 15
     }
   },
   {
     _id: "3",
-    projectName: "Computer Vision for Autonomous Quality Control",
-    projectDescription: "Real-time defect detection system using YOLOv8 and custom CNN architectures. Trained on 500K+ annotated images with data augmentation pipeline. Achieved 98.5% accuracy with 15ms inference time on edge devices. Reduced manual inspection time by 80% in manufacturing environment.",
+    projectName: "Task Management System",
+    projectDescription: "Collaborative task management application with real-time updates. Features include project boards, task assignments, deadline tracking, team collaboration, and progress visualization. Built with modern stack focusing on performance and user experience.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800"
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800"
     ],
-    technologies: ["Python", "PyTorch", "OpenCV", "TensorRT", "FastAPI", "CUDA", "Docker", "ONNX"],
-    categories: ["AI/ML", "Computer Vision"],
-    projectStatus: "COMPLETED",
+    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Docker"],
+    categories: ["Full Stack", "Real-time Applications"],
+    projectStatus: "IN_PROGRESS",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-09-10T10:00:00.000Z",
+    createdAt: "2024-11-20T10:00:00.000Z",
     statistics: {
-      likes: 189,
-      views: 6100,
-      comments_count: 52
+      likes: 62,
+      views: 1800,
+      comments_count: 12
     }
   },
   {
     _id: "4",
-    projectName: "Recommendation Engine with Deep Learning",
-    projectDescription: "Built hybrid recommendation system combining collaborative filtering, content-based filtering, and deep learning (Neural Collaborative Filtering). Implemented real-time personalization serving 10M+ users. Used matrix factorization, autoencoders, and attention mechanisms. Increased user engagement by 45% and CTR by 28%.",
+    projectName: "Weather Dashboard",
+    projectDescription: "Interactive weather dashboard providing real-time weather data and forecasts. Features location-based weather, 7-day forecasts, weather maps, and historical data visualization. Clean UI with responsive design and smooth animations.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800"
     ],
-    technologies: ["Python", "TensorFlow", "PyTorch", "Redis", "Cassandra", "Spark", "Airflow", "Kubernetes"],
-    categories: ["AI/ML", "Backend Development"],
+    technologies: ["React", "JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
+    categories: ["Frontend Development", "API Integration"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-08-05T10:00:00.000Z",
+    createdAt: "2024-09-10T10:00:00.000Z",
     statistics: {
-      likes: 167,
-      views: 4900,
-      comments_count: 41
+      likes: 34,
+      views: 980,
+      comments_count: 6
     }
   },
   {
     _id: "5",
-    projectName: "Time Series Forecasting for Demand Prediction",
-    projectDescription: "Production forecasting system using LSTM, Transformer, and Prophet models for multi-horizon predictions. Implemented automated feature engineering, hyperparameter tuning with Optuna, and ensemble methods. Reduced forecasting error (MAPE) from 18% to 7.2%. Handles seasonality, trends, and external factors.",
+    projectName: "Blog Platform",
+    projectDescription: "Modern blogging platform with markdown support, rich text editing, and content management. Features include user authentication, post creation and editing, comments, tags, search functionality, and SEO optimization. Built with focus on performance and accessibility.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800"
     ],
-    technologies: ["Python", "PyTorch", "Prophet", "Pandas", "Scikit-learn", "MLflow", "PostgreSQL", "Grafana"],
-    categories: ["AI/ML", "Data Science"],
+    technologies: ["Next.js", "React", "MongoDB", "Markdown", "Tailwind CSS", "Vercel"],
+    categories: ["Full Stack", "Content Management"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-07-15T10:00:00.000Z",
+    createdAt: "2024-08-25T10:00:00.000Z",
     statistics: {
-      likes: 142,
-      views: 3800,
-      comments_count: 29
+      likes: 56,
+      views: 1650,
+      comments_count: 11
     }
   },
   {
     _id: "6",
-    projectName: "MLOps Platform with CI/CD for ML Models",
-    projectDescription: "Built end-to-end MLOps infrastructure for model training, versioning, deployment, and monitoring. Implemented automated retraining pipelines, A/B testing framework, and drift detection. Reduced model deployment time from days to hours. Integrated with Kubernetes for auto-scaling and cost optimization.",
+    projectName: "Chat Application",
+    projectDescription: "Real-time chat application with private messaging, group chats, and file sharing. Features include user presence indicators, typing indicators, message history, emoji support, and push notifications. Built with WebSocket for instant communication.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800"
+      "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800"
     ],
-    technologies: ["Python", "Kubeflow", "MLflow", "Airflow", "Docker", "Kubernetes", "Prometheus", "Grafana"],
-    categories: ["AI/ML", "DevOps"],
+    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "JWT", "Redis"],
+    categories: ["Full Stack", "Real-time Applications"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-06-20T10:00:00.000Z",
+    createdAt: "2024-07-30T10:00:00.000Z",
     statistics: {
-      likes: 178,
-      views: 5200,
-      comments_count: 38
+      likes: 89,
+      views: 2800,
+      comments_count: 19
     }
   }
 ];
@@ -119,38 +118,38 @@ export const projects = [
 export const showcaseProjects = [
   {
     _id: "7",
-    projectName: "Conversational AI with RAG Architecture",
-    projectDescription: "Built production-ready chatbot using Retrieval-Augmented Generation (RAG) with LangChain and vector databases. Implemented semantic search with FAISS, prompt engineering, and context management. Integrated GPT-4 and Claude with custom fine-tuning. Achieved 92% user satisfaction with <2s response time.",
+    projectName: "Social Media Dashboard",
+    projectDescription: "Analytics dashboard for social media management with data visualization, post scheduling, and engagement tracking. Features include multi-platform integration, real-time analytics, automated reporting, and team collaboration tools. Built with focus on data visualization and user experience.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800"
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
     ],
-    technologies: ["Python", "LangChain", "OpenAI", "Pinecone", "FastAPI", "Redis", "PostgreSQL"],
-    categories: ["AI/ML", "NLP"],
+    technologies: ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL", "Redis"],
+    categories: ["Full Stack", "Data Visualization"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
     createdAt: "2024-11-01T10:00:00.000Z",
     statistics: {
-      likes: 234,
-      views: 7800,
-      comments_count: 61
+      likes: 71,
+      views: 2100,
+      comments_count: 14
     }
   },
   {
     _id: "8",
-    projectName: "Distributed Training Infrastructure",
-    projectDescription: "Designed and implemented distributed training system for large language models using PyTorch DDP and DeepSpeed. Optimized training pipeline reducing costs by 60% through mixed precision, gradient checkpointing, and efficient data loading. Scaled to 64 GPUs with near-linear speedup.",
+    projectName: "Fitness Tracker App",
+    projectDescription: "Mobile-responsive fitness tracking application with workout logging, progress tracking, and goal setting. Features include exercise library, custom workout plans, nutrition tracking, and progress visualization with charts. Built with modern web technologies for optimal performance.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800"
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800"
     ],
-    technologies: ["Python", "PyTorch", "DeepSpeed", "Ray", "Kubernetes", "CUDA", "Weights & Biases"],
-    categories: ["AI/ML", "Infrastructure"],
+    technologies: ["React", "Node.js", "MongoDB", "Chart.js", "Express", "JWT"],
+    categories: ["Full Stack", "Health & Fitness"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-05-10T10:00:00.000Z",
+    createdAt: "2024-06-15T10:00:00.000Z",
     statistics: {
-      likes: 198,
-      views: 6400,
-      comments_count: 44
+      likes: 52,
+      views: 1450,
+      comments_count: 9
     }
   }
 ];

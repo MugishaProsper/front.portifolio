@@ -10,8 +10,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: "GitHub", icon: Github, href: contactInfo.github },
-    { name: "LinkedIn", icon: Linkedin, href: contactInfo.linkedin },
-    { name: "Instagram", icon: Instagram, href: contactInfo.instagram }
+    { name: "LinkedIn", icon: Linkedin, href: contactInfo.linkedin }
   ];
 
   const scrollToSection = (sectionId: string) => {

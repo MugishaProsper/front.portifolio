@@ -3,114 +3,154 @@
 export const projects = [
   {
     _id: "1",
-    projectName: "AI Recommendation Engine",
-    projectDescription: "Built an intelligent recommendation system using collaborative filtering and deep learning to provide personalized content suggestions. Achieved 85% accuracy in user preference prediction.",
+    projectName: "Real-Time Fraud Detection System",
+    projectDescription: "Production ML system processing 50K+ transactions/second using ensemble models (XGBoost, LightGBM, Neural Networks). Reduced false positives by 67% while maintaining 99.2% fraud detection accuracy. Implemented feature engineering pipeline with 200+ behavioral signals and real-time model serving with <50ms latency.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800",
-      "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800"
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
     ],
-    technologies: ["Python", "TensorFlow", "FastAPI", "Redis", "PostgreSQL", "Docker"],
+    technologies: ["Python", "PyTorch", "XGBoost", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes"],
     categories: ["AI/ML", "Backend Development"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-09-15T10:00:00.000Z",
+    createdAt: "2024-11-15T10:00:00.000Z",
     statistics: {
-      likes: 45,
-      views: 1200,
-      comments_count: 12
+      likes: 156,
+      views: 4200,
+      comments_count: 34
     }
   },
   {
     _id: "2",
-    projectName: "E-commerce Platform",
-    projectDescription: "Full-stack e-commerce solution with real-time inventory management, payment integration, and advanced analytics dashboard. Supports multiple vendors and currencies.",
+    projectName: "Large-Scale NLP Pipeline for Document Intelligence",
+    projectDescription: "Built end-to-end NLP system processing 1M+ documents daily. Fine-tuned BERT and GPT models for entity extraction, classification, and summarization. Implemented distributed training with DeepSpeed, achieving 40% faster training. Deployed with A/B testing framework showing 35% improvement in extraction accuracy.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800"
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
     ],
-    technologies: ["Next.js", "Node.js", "MongoDB", "Stripe", "AWS S3", "Redis"],
-    categories: ["Web Development", "Full-Stack"],
+    technologies: ["Python", "Transformers", "PyTorch", "FastAPI", "Elasticsearch", "AWS SageMaker", "MLflow"],
+    categories: ["AI/ML", "NLP"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-08-20T10:00:00.000Z",
+    createdAt: "2024-10-20T10:00:00.000Z",
     statistics: {
-      likes: 67,
-      views: 2100,
-      comments_count: 18
+      likes: 203,
+      views: 5800,
+      comments_count: 47
     }
   },
   {
     _id: "3",
-    projectName: "Computer Vision System",
-    projectDescription: "Real-time object detection and tracking system for security applications. Implements YOLO v8 for high-accuracy detection with custom training on specific object classes.",
+    projectName: "Computer Vision for Autonomous Quality Control",
+    projectDescription: "Real-time defect detection system using YOLOv8 and custom CNN architectures. Trained on 500K+ annotated images with data augmentation pipeline. Achieved 98.5% accuracy with 15ms inference time on edge devices. Reduced manual inspection time by 80% in manufacturing environment.",
     sampleImages: [
       "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800"
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800"
     ],
-    technologies: ["Python", "PyTorch", "OpenCV", "FastAPI", "Docker", "CUDA"],
+    technologies: ["Python", "PyTorch", "OpenCV", "TensorRT", "FastAPI", "CUDA", "Docker", "ONNX"],
     categories: ["AI/ML", "Computer Vision"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-07-10T10:00:00.000Z",
+    createdAt: "2024-09-10T10:00:00.000Z",
     statistics: {
-      likes: 89,
-      views: 3400,
-      comments_count: 25
+      likes: 189,
+      views: 6100,
+      comments_count: 52
     }
   },
   {
     _id: "4",
-    projectName: "Microservices Platform",
-    projectDescription: "Scalable microservices architecture with service mesh, API gateway, and distributed tracing. Handles 10k+ requests per second with 99.9% uptime.",
+    projectName: "Recommendation Engine with Deep Learning",
+    projectDescription: "Built hybrid recommendation system combining collaborative filtering, content-based filtering, and deep learning (Neural Collaborative Filtering). Implemented real-time personalization serving 10M+ users. Used matrix factorization, autoencoders, and attention mechanisms. Increased user engagement by 45% and CTR by 28%.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800"
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
     ],
-    technologies: ["Node.js", "Docker", "Kubernetes", "RabbitMQ", "GraphQL", "Prometheus"],
-    categories: ["Backend Development", "DevOps"],
-    projectStatus: "IN_PROGRESS",
+    technologies: ["Python", "TensorFlow", "PyTorch", "Redis", "Cassandra", "Spark", "Airflow", "Kubernetes"],
+    categories: ["AI/ML", "Backend Development"],
+    projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-10-05T10:00:00.000Z",
+    createdAt: "2024-08-05T10:00:00.000Z",
     statistics: {
-      likes: 34,
-      views: 890,
-      comments_count: 8
+      likes: 167,
+      views: 4900,
+      comments_count: 41
     }
   },
   {
     _id: "5",
-    projectName: "Mobile Fitness App",
-    projectDescription: "Cross-platform fitness tracking application with AI-powered workout recommendations, nutrition planning, and social features for community engagement.",
+    projectName: "Time Series Forecasting for Demand Prediction",
+    projectDescription: "Production forecasting system using LSTM, Transformer, and Prophet models for multi-horizon predictions. Implemented automated feature engineering, hyperparameter tuning with Optuna, and ensemble methods. Reduced forecasting error (MAPE) from 18% to 7.2%. Handles seasonality, trends, and external factors.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800"
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
     ],
-    technologies: ["React Native", "Node.js", "MongoDB", "TensorFlow Lite", "Firebase"],
-    categories: ["Mobile", "AI/ML"],
+    technologies: ["Python", "PyTorch", "Prophet", "Pandas", "Scikit-learn", "MLflow", "PostgreSQL", "Grafana"],
+    categories: ["AI/ML", "Data Science"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-06-15T10:00:00.000Z",
+    createdAt: "2024-07-15T10:00:00.000Z",
     statistics: {
-      likes: 56,
-      views: 1800,
-      comments_count: 15
+      likes: 142,
+      views: 3800,
+      comments_count: 29
     }
   },
   {
     _id: "6",
-    projectName: "Content Moderation AI",
-    projectDescription: "Automated content moderation system using NLP and computer vision to detect inappropriate content, hate speech, and spam across multiple languages.",
+    projectName: "MLOps Platform with CI/CD for ML Models",
+    projectDescription: "Built end-to-end MLOps infrastructure for model training, versioning, deployment, and monitoring. Implemented automated retraining pipelines, A/B testing framework, and drift detection. Reduced model deployment time from days to hours. Integrated with Kubernetes for auto-scaling and cost optimization.",
     sampleImages: [
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+      "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800"
     ],
-    technologies: ["Python", "TensorFlow", "BERT", "FastAPI", "Redis", "PostgreSQL"],
-    categories: ["AI/ML", "Backend Development"],
+    technologies: ["Python", "Kubeflow", "MLflow", "Airflow", "Docker", "Kubernetes", "Prometheus", "Grafana"],
+    categories: ["AI/ML", "DevOps"],
     projectStatus: "COMPLETED",
     projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-05-20T10:00:00.000Z",
+    createdAt: "2024-06-20T10:00:00.000Z",
     statistics: {
-      likes: 72,
-      views: 2600,
-      comments_count: 20
+      likes: 178,
+      views: 5200,
+      comments_count: 38
+    }
+  }
+];
+
+// Additional showcase projects
+export const showcaseProjects = [
+  {
+    _id: "7",
+    projectName: "Conversational AI with RAG Architecture",
+    projectDescription: "Built production-ready chatbot using Retrieval-Augmented Generation (RAG) with LangChain and vector databases. Implemented semantic search with FAISS, prompt engineering, and context management. Integrated GPT-4 and Claude with custom fine-tuning. Achieved 92% user satisfaction with <2s response time.",
+    sampleImages: [
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800"
+    ],
+    technologies: ["Python", "LangChain", "OpenAI", "Pinecone", "FastAPI", "Redis", "PostgreSQL"],
+    categories: ["AI/ML", "NLP"],
+    projectStatus: "COMPLETED",
+    projectUrl: "https://github.com/MugishaProsper",
+    createdAt: "2024-11-01T10:00:00.000Z",
+    statistics: {
+      likes: 234,
+      views: 7800,
+      comments_count: 61
+    }
+  },
+  {
+    _id: "8",
+    projectName: "Distributed Training Infrastructure",
+    projectDescription: "Designed and implemented distributed training system for large language models using PyTorch DDP and DeepSpeed. Optimized training pipeline reducing costs by 60% through mixed precision, gradient checkpointing, and efficient data loading. Scaled to 64 GPUs with near-linear speedup.",
+    sampleImages: [
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800"
+    ],
+    technologies: ["Python", "PyTorch", "DeepSpeed", "Ray", "Kubernetes", "CUDA", "Weights & Biases"],
+    categories: ["AI/ML", "Infrastructure"],
+    projectStatus: "COMPLETED",
+    projectUrl: "https://github.com/MugishaProsper",
+    createdAt: "2024-05-10T10:00:00.000Z",
+    statistics: {
+      likes: 198,
+      views: 6400,
+      comments_count: 44
     }
   }
 ];

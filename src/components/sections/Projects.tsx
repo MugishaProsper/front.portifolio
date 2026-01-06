@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { useTheme } from "@/contexts/theme-context";
 import { projects } from "@/lib/data";

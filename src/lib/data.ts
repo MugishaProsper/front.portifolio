@@ -3,7 +3,7 @@
 export const projects = [
   {
     _id: "1",
-    projectName: "Back.Social - AI Social Media Platform",
+    projectName: "Linii - AI Social Media Platform",
     projectDescription: "Revolutionary AI-powered social media application that leverages machine learning for intelligent content curation, personalized feeds, and automated moderation. Features include real-time messaging, AI-driven content recommendations, sentiment analysis, and smart engagement metrics. Built with modern JavaScript stack focusing on scalability and user experience.",
     sampleImages: [
       "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800",
@@ -62,7 +62,7 @@ export const projects = [
   },
   {
     _id: "4",
-    projectName: "Prosper.dev",
+    projectName: "Personal Portifolio",
     projectDescription: "Modern, responsive portfolio website built with Next.js 15 and TypeScript. Features dark/light theme switching with system preference detection, smooth animations with Framer Motion, and a professional contact form with SMTP email integration. Showcases projects, skills, and testimonials with a clean, minimalist design inspired by modern web aesthetics.",
     sampleImages: [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
@@ -81,7 +81,7 @@ export const projects = [
   },
   {
     _id: "5",
-    projectName: "ShopHub",
+    projectName: "Aether",
     projectDescription: "Full-stack e-commerce application with advanced product management, intelligent shopping cart, and secure payment processing. Features include user authentication with JWT, advanced product search and filtering, order tracking, inventory management, and responsive design optimized for mobile and desktop. Implements real-time notifications and comprehensive admin dashboard.",
     sampleImages: [
       "https://images.unsplash.com/photo-1557821552-17105176677c?w=800",
@@ -90,7 +90,7 @@ export const projects = [
     technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe", "JWT", "Socket.io"],
     categories: ["Full Stack", "E-Commerce"],
     projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper/eshop-front",
+    projectUrl: "https://github.com/MugishaProsper/front.aether",
     createdAt: "2024-08-15T10:00:00.000Z",
     statistics: {
       likes: 167,
@@ -108,7 +108,7 @@ export const projects = [
     technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "JWT", "Redis", "AWS S3"],
     categories: ["Full Stack", "Real-time Applications"],
     projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper",
+    projectUrl: "https://github.com/MugishaProsper/ai.chatapp",
     createdAt: "2024-07-30T10:00:00.000Z",
     statistics: {
       likes: 178,
@@ -118,62 +118,22 @@ export const projects = [
   }
 ];
 
-// Additional showcase projects
-export const showcaseProjects = [
-  {
-    _id: "7",
-    projectName: "TaskMaster Pro",
-    projectDescription: "Collaborative project management platform with real-time updates and team coordination. Features include Kanban boards, task assignments with priority levels, deadline tracking, team collaboration with comments, progress visualization with analytics, and automated notifications. Built with modern stack focusing on performance, scalability, and intuitive user experience.",
-    sampleImages: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800"
-    ],
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Docker", "Redis"],
-    categories: ["Full Stack", "Productivity"],
-    projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-11-01T10:00:00.000Z",
-    statistics: {
-      likes: 134,
-      views: 3600,
-      comments_count: 27
-    }
-  },
-  {
-    _id: "8",
-    projectName: "SkyWatch",
-    projectDescription: "Comprehensive weather intelligence platform providing real-time meteorological data and predictive analytics. Features include location-based weather with GPS integration, 14-day forecasts with hourly breakdowns, interactive weather maps with multiple layers, historical data analysis, and severe weather alerts. Implements data visualization with charts and graphs for temperature, precipitation, and wind patterns.",
-    sampleImages: [
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800"
-    ],
-    technologies: ["React", "JavaScript", "OpenWeather API", "Chart.js", "Mapbox", "Node.js", "Express"],
-    categories: ["Full Stack", "Data Visualization"],
-    projectStatus: "COMPLETED",
-    projectUrl: "https://github.com/MugishaProsper",
-    createdAt: "2024-06-15T10:00:00.000Z",
-    statistics: {
-      likes: 98,
-      views: 2750,
-      comments_count: 19
-    }
-  }
-];
-
 export const testimonials = [
   {
     _id: "1",
-    clientName: "Sarah Johnson",
-    clientRole: "CTO",
-    project: "AI Recommendation Engine",
-    message: "Prosper delivered an exceptional AI recommendation system that exceeded our expectations. His deep understanding of machine learning algorithms and ability to translate complex requirements into working solutions was impressive. The system has increased our user engagement by 40%.",
+    clientName: "Asimwe Landry",
+    clientRole: "CEO, Neurolab",
+    project: "NeurAI NLPT 2-Preview",
+    message: "",
     rating: 5,
     image: "https://ui-avatars.com/api/?name=Sarah+Johnson&background=6366f1&color=ffffff",
     createdAt: "2024-09-20T10:00:00.000Z"
   },
   {
     _id: "2",
-    clientName: "Michael Chen",
+    clientName: "Michael Truel P.",
     clientRole: "Product Manager",
-    project: "E-commerce Platform",
+    project: "Aether",
     message: "Working with Prosper was a game-changer for our e-commerce project. He built a robust, scalable platform that handles thousands of transactions daily. His attention to detail and proactive communication made the entire process smooth.",
     rating: 5,
     image: "https://ui-avatars.com/api/?name=Michael+Chen&background=8b5cf6&color=ffffff",
@@ -181,10 +141,10 @@ export const testimonials = [
   },
   {
     _id: "3",
-    clientName: "Emily Rodriguez",
-    clientRole: "Founder & CEO",
-    project: "Mobile Fitness App",
-    message: "Prosper's expertise in mobile development and AI integration helped us launch our fitness app ahead of schedule. The AI-powered features he implemented have become our key differentiator in the market. Highly recommended!",
+    clientName: "Izere Shema Leandre",
+    clientRole: "CEO, Echo Solutions Ltd",
+    project: "Regen AI",
+    message: "Prosper's expertise in AI integration helped us develop our data cleaning engine ahead of schedule. The AI-powered features he implemented have become our key differentiator in the market. Highly recommended!",
     rating: 5,
     image: "https://ui-avatars.com/api/?name=Emily+Rodriguez&background=06b6d4&color=ffffff",
     createdAt: "2024-07-15T10:00:00.000Z"
@@ -192,7 +152,7 @@ export const testimonials = [
   {
     _id: "4",
     clientName: "David Kim",
-    clientRole: "Engineering Lead",
+    clientRole: "Engineering Lead, FlyPay",
     project: "Microservices Platform",
     message: "Prosper's architectural decisions and implementation of our microservices platform were spot-on. He demonstrated excellent problem-solving skills and delivered a system that's both performant and maintainable. A true professional.",
     rating: 5,
@@ -202,9 +162,9 @@ export const testimonials = [
   {
     _id: "5",
     clientName: "Lisa Anderson",
-    clientRole: "VP of Technology",
+    clientRole: "Undergraduate, MIT",
     project: "Computer Vision",
-    message: "The computer vision system Prosper developed for our security application is incredibly accurate and efficient. His expertise in deep learning and real-time processing was evident throughout the project. Excellent work!",
+    message: "The computer vision system Prosper helped us on for our security application is incredibly accurate and efficient. His expertise in deep learning and real-time processing was evident throughout the project. Excellent work!",
     rating: 5,
     image: "https://ui-avatars.com/api/?name=Lisa+Anderson&background=f59e0b&color=ffffff",
     createdAt: "2024-07-20T10:00:00.000Z"
@@ -212,9 +172,9 @@ export const testimonials = [
   {
     _id: "6",
     clientName: "James Wilson",
-    clientRole: "Director of Operations",
-    project: "Content Moderation AI",
-    message: "Prosper's content moderation AI has transformed how we handle user-generated content. The system is fast, accurate, and has significantly reduced our moderation workload. His technical skills and professionalism are top-notch.",
+    clientRole: "Director of Operations, Litmos",
+    project: "ReTrain",
+    message: "Prosper's ML skills has transformed how we handle user-generated data and integrations with training pipelines. The system is fast, accurate, and has significantly reduced our moderation workload. His technical skills and professionalism are top-notch.",
     rating: 5,
     image: "https://ui-avatars.com/api/?name=James+Wilson&background=ef4444&color=ffffff",
     createdAt: "2024-06-01T10:00:00.000Z"
